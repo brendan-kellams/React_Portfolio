@@ -47,13 +47,13 @@ class Projects extends Component {
                 </ImageButton2>
               </a>
             </ImageContainer>
-            
+            <Fade left>
               <p>
                 It's a social media application that allows users to create and search for events happening around them.
                 Users also have a profile page where it shows which events they are planning on attending and they
                 can see which events their friends are attending.
               </p>
-            
+            </Fade>
           </ProjectContainer2>
           <br /><br /><br />
           <ProjectContainer>
@@ -84,14 +84,14 @@ class Projects extends Component {
                 </ImageButton2>
               </a>
             </ImageContainer>
-            
+            <Fade left>
               <p className='container2'>
                 This app is an Amazon-like storefront built with Javascript, MySQL, and implemented through Node. The app will take in orders from
                 customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track
                 product sales across your store's departments and then provide a summary of the highest-grossing departments
                 in the store.
               </p>
-            
+            </Fade>
           </ProjectContainer2>
         </Container>
       </App>
