@@ -48,7 +48,7 @@ class Projects extends Component {
               </a>
             </ImageContainer>
             <Fade left>
-              <p>
+              <p className='container2'>
                 It's a social media application that allows users to create and search for events happening around them.
                 Users also have a profile page where it shows which events they are planning on attending and they
                 can see which events their friends are attending.
