@@ -61,28 +61,6 @@ export const ImageContainer = styled(Relative) `
   flex-shrink: 0;
   flex-grow: 0;  
 `;
-export const ProjectContainer = styled(Flex) `
-  width: 20%;
-  display: inline;
-  ${media.tablet`
-    flex-direction: column;
-    display: block;
-    margin: auto;
-    width: 75%;
-    text-align: center;
-  `}
-  p {
-    font-size: 30px;
-    margin-left: 0px;
-    pointer-events: none;
-    margin-top: 100px;
-    line-height: 200%;
-    ${media.tablet`
-      margin-top: 30px;
-    `}    
-  }
-`;
-
 export const ProjectContainer2 = styled(Flex) `
   width: 20%;
   display: inline;
@@ -111,3 +89,25 @@ export const ProjectContainer2 = styled(Flex) `
     `}
   }
 `;
+export const ProjectContainer = styled(Flex) `
+  width: 20%;
+  display: inline;
+  ${media.tablet`
+    flex-direction: column;
+    display: block;
+    margin: auto;
+    width: 75%;
+    text-align: center;
+  `}
+  p {
+    font-size: 30px;
+    margin-left: 0px;
+    pointer-events: none;
+    margin-top: 100px;
+    line-height: 200%;
+    ${media.tablet`
+      margin-top: 30px;
+    `}    
+  }
+`;
+
