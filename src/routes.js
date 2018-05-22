@@ -4,6 +4,7 @@ import { AnimatedSwitch } from 'react-router-transition';
 import Home from './containers/Home/Home';
 import Projects from './containers/Projects/Projects';
 import AboutMe from './containers/AboutMe/AboutMe';
+import Resume from './containers/Resume/Resume';
 
 
 export default (
@@ -17,6 +18,7 @@ export default (
       <Route exact path="/" component={Home} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/aboutme" component={AboutMe} />
+      <Route exact path="/resume" component={Resume} />      
     </AnimatedSwitch>
   </HashRouter>
 );
