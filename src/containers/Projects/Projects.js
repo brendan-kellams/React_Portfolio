@@ -4,7 +4,7 @@ import {
   ImageButton2,
   ImageContainer,
   ProjectContainer,
-  ProjectContainer2
+  ProjectContainer2,
 } from './Projects.style';
 import { Container } from '../../theme/grid';
 import App from '../App/App';
