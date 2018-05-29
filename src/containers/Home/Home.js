@@ -13,6 +13,7 @@ import WhenInView from '../../components/WhenInView/WhenInView'
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
 import { Footer } from '../../components/Footer/Footer';
 
+
 export default class Home extends Component {
 
   render() {
@@ -153,7 +154,17 @@ export default class Home extends Component {
           </Container>
         </App>
         <Footer>
-          <span>Meow</span>
+          <Row>
+            <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
+            </a>
+            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 85, width: 85, marginTop: 5 }} src={require('../../assets/images/facebook.png')} alt='facebook' />
+            </a>
+            <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/github.png')} alt='github' />
+            </a>
+          </Row>
         </Footer>
       </div>
     );

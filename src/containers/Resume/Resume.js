@@ -4,6 +4,8 @@ import { Container } from '../../theme/grid';
 import ScrollToTopOnMount from '../../components/ScrollToTop/ScrollToTop';
 import { H1, H2, H3, H4, H5, H6, P, BlockQuote, Code, A } from '../../theme/types';
 import { Footer } from '../../components/Footer/Footer';
+import { Row } from '../Home/Home.style';
+
 
 
 
@@ -91,7 +93,17 @@ class Resume extends Component {
           </Container>
         </App>
         <Footer>
-          <span>this is a test</span>
+          <Row>
+            <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
+              <img style={{height:80,width:80}} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
+            </a>
+            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
+              <img style={{height:85,width:85, marginTop:5}} src={require('../../assets/images/facebook.png')} alt='facebook' />
+            </a>
+            <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
+              <img style={{height:80,width:80}} src={require('../../assets/images/github.png')} alt='github' />
+            </a>
+          </Row>
         </Footer>
       </div>
     )

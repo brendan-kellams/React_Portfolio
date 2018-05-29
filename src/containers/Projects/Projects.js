@@ -9,92 +9,110 @@ import {
 import { Container } from '../../theme/grid';
 import App from '../App/App';
 import { A } from '../../theme/types';
-import Fade from 'react-reveal/Fade'
-import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
+import Fade from 'react-reveal/Fade';
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
+import { Footer } from '../../components/Footer/Footer';
+import { Row } from '../Home/Home.style'
+
 
 class Projects extends Component {
   render() {
     return (
-      <App>
-        <ScrollToTop />
-        <Container>
-          <ProjectContainer>
-            <h1><A href='https://pt-link.herokuapp.com/' target='_blank'>PT-Link</A></h1>
-            <ImageContainer>
-              <a href='https://pt-link.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
-                <ImageButton>
-                  <img src={require('../../assets/images/PT-Link-new.jpg')} alt='project1' />
-                </ImageButton>
-              </a>
-            </ImageContainer>
-            <Fade right>
-              <p>
-                PT-Link is an educational-communication application that allows parents and teachers
-              to stay connected regarding what content is being taught in class.  The content covers
-              each lesson plan, topics covered in class, homework, and the due date the homework.  Teachers
-              and parents are also able to communicate through a messaging service to answer additional
-              questions.
+      <div>
+        <App>
+          <ScrollToTop />
+          <Container>
+            <ProjectContainer>
+              <h1><A href='https://pt-link.herokuapp.com/' target='_blank'>PT-Link</A></h1>
+              <ImageContainer>
+                <a href='https://pt-link.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
+                  <ImageButton>
+                    <img src={require('../../assets/images/PT-Link-new.jpg')} alt='project1' />
+                  </ImageButton>
+                </a>
+              </ImageContainer>
+              <Fade right>
+                <p>
+                  PT-Link is an educational-communication application that allows parents and teachers
+                to stay connected regarding what content is being taught in class.  The content covers
+                each lesson plan, topics covered in class, homework, and the due date the homework.  Teachers
+                and parents are also able to communicate through a messaging service to answer additional
+                questions.
                 </p>
-            </Fade>
-          </ProjectContainer>
-          <br /><br /><br />
-          <ProjectContainer2>
-            <h1><A href='http://whoopitup.herokuapp.com/' target='_blank'>Whoop It Up!</A></h1>
-            <ImageContainer>
-              <a href='http://whoopitup.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
-                <ImageButton2>
-                  <img src={require('../../assets/images/og_image-new2.jpg')} alt='project4' />
-                </ImageButton2>
-              </a>
-            </ImageContainer>
-            <Fade left>
-              <p>
-                It's a social media application that allows users to create and search for events happening around them.
-                Users also have a profile page where it shows which events they are planning on attending and they
-                can see which events their friends are attending.
+              </Fade>
+            </ProjectContainer>
+            <br /><br /><br />
+            <ProjectContainer2>
+              <h1><A href='http://whoopitup.herokuapp.com/' target='_blank'>Whoop It Up!</A></h1>
+              <ImageContainer>
+                <a href='http://whoopitup.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
+                  <ImageButton2>
+                    <img src={require('../../assets/images/og_image-new2.jpg')} alt='project4' />
+                  </ImageButton2>
+                </a>
+              </ImageContainer>
+              <Fade left>
+                <p>
+                  It's a social media application that allows users to create and search for events happening around them.
+                  Users also have a profile page where it shows which events they are planning on attending and they
+                  can see which events their friends are attending.
               </p>
-            </Fade>
-          </ProjectContainer2>
-          <br /><br /><br />
-          <ProjectContainer>
-            <h1><A href='https://yumburger.herokuapp.com/' target='_blank'>Yum Burger!</A></h1>
-            <ImageContainer>
-              <a href='https://yumburger.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
-                <ImageButton>
-                  <img src={require('../../assets/images/burger.gif')} alt='project2' />
-                </ImageButton>
-              </a>
-            </ImageContainer>
-            <Fade right>
-              <p>
-                Yum Burger is an application where you are able to create a burger and log that burger into a queue waiting to be DEVOURED!
-                This is made with MySQL, Node, Express, Handlebars and a homemade ORM (object-relational mapping). This uses a MVC design
-                pattern and uses Node and MySQL to query and route data in the app. Handlebars generates the
-                HTML for the application. Enjoy!
+              </Fade>
+            </ProjectContainer2>
+            <br /><br /><br />
+            <ProjectContainer>
+              <h1><A href='https://yumburger.herokuapp.com/' target='_blank'>Yum Burger!</A></h1>
+              <ImageContainer>
+                <a href='https://yumburger.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
+                  <ImageButton>
+                    <img src={require('../../assets/images/burger.gif')} alt='project2' />
+                  </ImageButton>
+                </a>
+              </ImageContainer>
+              <Fade right>
+                <p>
+                  Yum Burger is an application where you are able to create a burger and log that burger into a queue waiting to be DEVOURED!
+                  This is made with MySQL, Node, Express, Handlebars and a homemade ORM (object-relational mapping). This uses a MVC design
+                  pattern and uses Node and MySQL to query and route data in the app. Handlebars generates the
+                  HTML for the application. Enjoy!
               </p>
-            </Fade>
-          </ProjectContainer>
-          <br /><br /><br />
-          <ProjectContainer2>
-            <h1><A href='https://github.com/brendan-kellams/bamazon' target='_blank'>Bamazon</A></h1>
-            <ImageContainer>
-              <a href='https://github.com/brendan-kellams/bamazon' target='_blank' rel='noopener noreferrer'>
-                <ImageButton2>
-                  <img src={require('../../assets/images/bamazon_thumbnail.jpg')} alt='project4' />
-                </ImageButton2>
-              </a>
-            </ImageContainer>
-            <Fade left>
-              <p>
-                This app is an Amazon-like storefront built with Javascript, MySQL, and implemented through Node. The app will take in orders from
-                customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track
-                product sales across your store's departments and then provide a summary of the highest-grossing departments
-                in the store.
+              </Fade>
+            </ProjectContainer>
+            <br /><br /><br />
+            <ProjectContainer2>
+              <h1><A href='https://github.com/brendan-kellams/bamazon' target='_blank'>Bamazon</A></h1>
+              <ImageContainer>
+                <a href='https://github.com/brendan-kellams/bamazon' target='_blank' rel='noopener noreferrer'>
+                  <ImageButton2>
+                    <img src={require('../../assets/images/bamazon_thumbnail.jpg')} alt='project4' />
+                  </ImageButton2>
+                </a>
+              </ImageContainer>
+              <Fade left>
+                <p>
+                  This app is an Amazon-like storefront built with Javascript, MySQL, and implemented through Node. The app will take in orders from
+                  customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track
+                  product sales across your store's departments and then provide a summary of the highest-grossing departments
+                  in the store.
               </p>
-            </Fade>
-          </ProjectContainer2>
-        </Container>
-      </App>
+              </Fade>
+            </ProjectContainer2>
+          </Container>
+        </App>
+        <Footer>
+          <Row>
+            <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
+            </a>
+            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 85, width: 85, marginTop: 5 }} src={require('../../assets/images/facebook.png')} alt='facebook' />
+            </a>
+            <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/github.png')} alt='github' />
+            </a>
+          </Row>
+        </Footer>
+      </div>
     )
   }
 }
