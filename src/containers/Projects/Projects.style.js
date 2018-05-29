@@ -83,7 +83,7 @@ export const ProjectContainer2 = styled(Flex) `
     margin-left: 0px;
     pointer-events: none;
     margin-top: 100px;
-    line-height: 60px;
+    line-height: 200%;
     ${media.tablet`
       margin-top: 20px;
     `}

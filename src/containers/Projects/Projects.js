@@ -66,7 +66,7 @@ class Projects extends Component {
               </a>
             </ImageContainer>
             <Fade right>
-              <p style={{lineHeight: 60}}>
+              <p>
                 Yum Burger is an application where you are able to create a burger and log that burger into a queue waiting to be DEVOURED!
                 This is made with MySQL, Node, Express, Handlebars and a homemade ORM (object-relational mapping). This uses a MVC design
                 pattern and uses Node and MySQL to query and route data in the app. Handlebars generates the
