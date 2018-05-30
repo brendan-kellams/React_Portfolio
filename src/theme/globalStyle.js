@@ -2,7 +2,7 @@ import { injectGlobal } from 'styled-components';
 import {white} from './variables'
 /*-eslint-disable */
 injectGlobal`
-@import url('http://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 
   body {
     font-family: 'Fjalla One', sans-serif;
