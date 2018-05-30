@@ -1,5 +1,5 @@
 import React from 'react';
-import { charcoal, white, red } from '../../theme/variables';
+
 
 
 const footerStyle = {
@@ -13,14 +13,14 @@ const footerStyle = {
   position: "fixed",
   left: "0",
   bottom: "0",
-  height: "80px",
+  height: "110px",
   width: "100%"
 };
 
 const phantomStyle = {
   display: "block",
   padding: "20px",
-  height: "60px",
+  height: "110px",
   width: "100%"
 };
 

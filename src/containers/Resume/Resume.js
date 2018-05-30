@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import App from '../App/App';
 import { Container } from '../../theme/grid';
 import ScrollToTopOnMount from '../../components/ScrollToTop/ScrollToTop';
-import { H1, H2, H3, H4, H5, H6, P, BlockQuote, Code, A } from '../../theme/types';
+import { H1, H2, P } from '../../theme/types';
 import { Footer } from '../../components/Footer/Footer';
 import { Row } from '../Home/Home.style';
 
@@ -94,14 +94,20 @@ class Resume extends Component {
         </App>
         <Footer>
           <Row>
+            <span>Email: brendan.kellams@gmail.com</span>
+          </Row>
+          <Row>
             <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
-              <img style={{height:80,width:80}} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
-            </a>
-            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{height:85,width:85, marginTop:5}} src={require('../../assets/images/facebook.png')} alt='facebook' />
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
             </a>
             <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{height:80,width:80}} src={require('../../assets/images/github.png')} alt='github' />
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/github.png')} alt='github' />
+            </a>
+            <a href='https://www.instagram.com/redmangoin/?hl=en' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/instagram.png')} alt='instagram' />
+            </a>
+            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/facebook.png')} alt='facebook' />
             </a>
           </Row>
         </Footer>

@@ -19,7 +19,6 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-
         <App>
           <ScrollToTop />
           <Container>
@@ -153,20 +152,27 @@ export default class Home extends Component {
             </Row>
           </Container>
         </App>
+        <div style={{ clear: 'both', height: 50 }}></div>
         <Footer>
+          <Row>
+            <span>Email: brendan.kellams@gmail.com</span>
+          </Row>
           <Row>
             <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
               <img style={{ height: 80, width: 80 }} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
             </a>
-            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 85, width: 85, marginTop: 5 }} src={require('../../assets/images/facebook.png')} alt='facebook' />
-            </a>
             <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
               <img style={{ height: 80, width: 80 }} src={require('../../assets/images/github.png')} alt='github' />
             </a>
+            <a href='https://www.instagram.com/redmangoin/?hl=en' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/instagram.png')} alt='instagram' />
+            </a>
+            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
+              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/facebook.png')} alt='facebook' />
+            </a>
           </Row>
         </Footer>
-      </div>
+      </div >
     );
   }
 }
