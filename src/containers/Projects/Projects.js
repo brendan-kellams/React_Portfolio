@@ -4,11 +4,11 @@ import {
   ImageButton2,
   ImageContainer,
   ProjectContainer,
-  ProjectContainer2,
+  // ProjectContainer2,
 } from './Projects.style';
 import { Container } from '../../theme/grid';
 import App from '../App/App';
-import { A } from '../../theme/types';
+import { A, H1 } from '../../theme/types';
 import Fade from 'react-reveal/Fade';
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 import { Footer } from '../../components/Footer/Footer';
@@ -42,8 +42,8 @@ class Projects extends Component {
               </Fade>
             </ProjectContainer>
             <br /><br /><br />
-            <ProjectContainer2>
-              <h1><A href='http://whoopitup.herokuapp.com/' target='_blank'>Whoop It Up!</A></h1>
+            <ProjectContainer>
+              <H1 align='right'><A href='http://whoopitup.herokuapp.com/' target='_blank'>Whoop It Up!</A></H1>
               <ImageContainer>
                 <a href='http://whoopitup.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
                   <ImageButton2>
@@ -58,7 +58,7 @@ class Projects extends Component {
                   can see which events their friends are attending.
               </p>
               </Fade>
-            </ProjectContainer2>
+            </ProjectContainer>
             <br /><br /><br />
             <ProjectContainer>
               <h1><A href='https://yumburger.herokuapp.com/' target='_blank'>Yum Burger!</A></h1>
@@ -79,8 +79,8 @@ class Projects extends Component {
               </Fade>
             </ProjectContainer>
             <br /><br /><br />
-            <ProjectContainer2>
-              <h1><A href='https://github.com/brendan-kellams/bamazon' target='_blank'>Bamazon</A></h1>
+            <ProjectContainer>
+              <H1 align='right'><A href='https://github.com/brendan-kellams/bamazon' target='_blank'>Bamazon</A></H1>
               <ImageContainer>
                 <a href='https://github.com/brendan-kellams/bamazon' target='_blank' rel='noopener noreferrer'>
                   <ImageButton2>
@@ -96,13 +96,8 @@ class Projects extends Component {
                   in the store.
               </p>
               </Fade>
-            </ProjectContainer2>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            </ProjectContainer>
+            <div style={{ clear: 'both', height: 50 }}></div>
           </Container>
         </App>
         <Footer>
