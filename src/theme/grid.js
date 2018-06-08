@@ -22,10 +22,10 @@ export const Container = styled(Div) `
   padding-top: 2.8em;
   position: relative;
   min-height: 100%;
-  ${media.tablet`
+  @media ${media.tablet} {
     padding-left: 15px;
     padding-right: 15px;
-  `}
+  }
 `;
 
 export const Relative = styled(Div) `

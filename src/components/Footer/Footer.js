@@ -1,37 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { FooterStyle, Image } from './Footer.style';
+import { Row } from '../../containers/Home/Home.style';
 
 
-
-const footerStyle = {
-  backgroundColor: '#0e79b2',
-  fontSize: "30px",
-  color: "#F5F5F5",
-  borderTop: "1px solid #F5F5F5",
-  textAlign: "center",
-  padding: "20px",
-  paddingTop: "10px",
-  position: "fixed",
-  left: "0",
-  bottom: "0",
-  height: "110px",
-  width: "100%"
-};
-
-const phantomStyle = {
-  display: "block",
-  padding: "20px",
-  height: "110px",
-  width: "100%"
-};
-
-export const Footer = function({ children }) {
-  return (
-    <div>
-      <div style={phantomStyle} />
-      <div style={footerStyle}>{children}</div>
-    </div>
-  );
+class Footer extends Component {
+  render() {
+    return (
+      <FooterStyle>
+        <Row>
+          <span>Email: brendan.kellams@gmail.com</span>
+        </Row>
+        <Row>
+          <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
+            <Image src={require('../../assets/images/linkedin.png')} alt='linkedin' />
+          </a>
+          <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
+            <Image src={require('../../assets/images/github.png')} alt='github' />
+          </a>
+          <a href='https://www.instagram.com/redmangoin/?hl=en' target='_blank' rel='noopener noreferrer'>
+            <Image src={require('../../assets/images/instagram.png')} alt='instagram' />
+          </a>
+          <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
+            <Image src={require('../../assets/images/facebook.png')} alt='facebook' />
+          </a>
+        </Row>
+      </FooterStyle>
+    );
+  }
 }
+
+export default Footer;
 
 
 

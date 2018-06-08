@@ -11,8 +11,7 @@ import App from '../App/App';
 import { A, H1 } from '../../theme/types';
 import Fade from 'react-reveal/Fade';
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
-import { Footer } from '../../components/Footer/Footer';
-import { Row } from '../Home/Home.style'
+import Footer from '../../components/Footer/Footer';
 
 
 class Projects extends Component {
@@ -100,25 +99,8 @@ class Projects extends Component {
             <div style={{ clear: 'both', height: 50 }}></div>
           </Container>
         </App>
-        <Footer>
-          <Row>
-            <span>Email: brendan.kellams@gmail.com</span>
-          </Row>
-          <Row>
-            <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
-            </a>
-            <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/github.png')} alt='github' />
-            </a>
-            <a href='https://www.instagram.com/redmangoin/?hl=en' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/instagram.png')} alt='instagram' />
-            </a>
-            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/facebook.png')} alt='facebook' />
-            </a>
-          </Row>
-        </Footer>
+        <div style={{ clear: 'both', height: 50 }}></div>                
+        <Footer />
       </div>
     )
   }

@@ -11,13 +11,12 @@ export const NavigationContainer = styled(Flex)`
   z-index: 1;
   background-color: ${white};
   border-radius: 15px;
-  ${media.tablet`
+  @media ${media.tablet} {
     top: 0;
     font-size: .8em;
     position: fixed;
     justify-content: center;
   }
-`}
 `;
 
 export const NavItem = styled(Link)`
@@ -28,11 +27,10 @@ export const NavItem = styled(Link)`
   color: ${blue};
   position: relative;
   text-decoration: none;
-  ${media.tablet`
+  @media ${media.tablet} {
   font-size: 1em;
   }
   
-`}
   
   &:hover {
     color: ${red};
@@ -47,39 +45,36 @@ export const NavItem = styled(Link)`
       z-index: -1;
       transform: scale(1.3);
       border-radius: 25px;
-
     }
   }
-
   `;
+  
   export const A = styled(Link)`
-  margin-right: 15px;
-  margin-left: 15px
-  font-size: 1.5em;
-  cursor: pointer;
-  color: ${blue};
-  position: relative;
-  text-decoration: none;
-  ${media.tablet`
-  font-size: 1em;
-  }
-  
-`}
-  
-  &:hover {
-    color: ${red};
-    &:after {
-      content: ' ';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: ${charcoal};
-      z-index: -1;
-      transform: scale(1.3);
-      border-radius: 25px;
-
+    margin-right: 15px;
+    margin-left: 15px
+    font-size: 1.5em;
+    cursor: pointer;
+    color: ${blue};
+    position: relative;
+    text-decoration: none;
+    @media ${media.tablet} {
+    font-size: 1em;
     }
-  }
+  
+    &:hover {
+      color: ${red};
+      &:after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: ${charcoal};
+        z-index: -1;
+        transform: scale(1.3);
+        border-radius: 25px;
+
+      }
+    }
   `;

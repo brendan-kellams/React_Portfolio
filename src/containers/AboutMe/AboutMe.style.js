@@ -1,26 +1,30 @@
 import styled from 'styled-components';
 import { charcoal } from '../../theme/variables';
 import media from '../../theme/media';
+import { Flex } from '../../theme/grid';
 
 export const Title = styled.h1`
-  margin-top: 0;
+  text-align: center;
   color: ${charcoal};
 
-  ${media.tablet`
-    text-align: center;
-  `}
+  @media ${media.mobileS} {
+    font-size: 35px;
+  }
 `;
 
 export const Image = styled.img`
   border-radius: 25px;
+
+  @media ${media.mobileS} {
+    height: 250px;
+    width: 250px;
+  }
+  @media ${media.laptop} {
+    height: 350px;
+    width: 350px;
+  }
+
 `;
-export const ImageContainer = styled.div`
-  width: 500px;
-  height: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 25px;
-  ${media.tablet`
-    margin-left: 125px;
-  `}
+export const ImageContainer = styled(Flex)`
+  
 `;

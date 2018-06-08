@@ -5,8 +5,8 @@ import { Title, Image, ImageContainer } from './AboutMe.style';
 import { H2 } from '../../theme/types';
 import Slideshow from '../../components/SlideShow/SlideShow'
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
-import { Footer } from '../../components/Footer/Footer';
-import { Row } from '../Home/Home.style';
+import Footer from '../../components/Footer/Footer';
+
 
 
 
@@ -19,7 +19,7 @@ class AboutMe extends Component {
           <ScrollToTop />
           <Container>
             <Title>About Me</Title>
-            <ImageContainer>
+            <ImageContainer justify= 'center'>
               <Image src={require('../../assets/images/brendan profile.jpg')} />
             </ImageContainer>
             <H2 align='center' style={{ lineHeight: '1.5em', fontSize: '1.2em' }}>As you probably already know, my name is Brendan and I'm a new web developer
@@ -40,25 +40,8 @@ class AboutMe extends Component {
             <Slideshow />
           </Container>
         </App>
-        <Footer>
-          <Row>
-            <span>Email: brendan.kellams@gmail.com</span>
-          </Row>
-          <Row>
-            <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
-            </a>
-            <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/github.png')} alt='github' />
-            </a>
-            <a href='https://www.instagram.com/redmangoin/?hl=en' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/instagram.png')} alt='instagram' />
-            </a>
-            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/facebook.png')} alt='facebook' />
-            </a>
-          </Row>
-        </Footer>
+        <div style={{ clear: 'both', height: 60 }}></div>
+        <Footer />
       </div>
       );
     }

@@ -11,7 +11,7 @@ import {
 
 import WhenInView from '../../components/WhenInView/WhenInView'
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
-import { Footer } from '../../components/Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 
 
 export default class Home extends Component {
@@ -153,25 +153,7 @@ export default class Home extends Component {
           </Container>
         </App>
         <div style={{ clear: 'both', height: 50 }}></div>
-        <Footer>
-          <Row>
-            <span>Email: brendan.kellams@gmail.com</span>
-          </Row>
-          <Row>
-            <a href='https://www.linkedin.com/in/brendan-kellams/' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/linkedin.png')} alt='linkedin' />
-            </a>
-            <a href='https://github.com/brendan-kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/github.png')} alt='github' />
-            </a>
-            <a href='https://www.instagram.com/redmangoin/?hl=en' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/instagram.png')} alt='instagram' />
-            </a>
-            <a href='https://www.facebook.com/brendan.kellams' target='_blank' rel='noopener noreferrer'>
-              <img style={{ height: 80, width: 80 }} src={require('../../assets/images/facebook.png')} alt='facebook' />
-            </a>
-          </Row>
-        </Footer>
+        <Footer />
       </div >
     );
   }

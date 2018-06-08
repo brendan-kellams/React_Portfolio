@@ -13,9 +13,9 @@ export const Logo = styled.div`
     color: black
     text-decoration: none;
   }
-${media.tablet`
+ @media ${media.tablet} {
   margin-left: 70px;
-`}
+  }
 `;
 
 export const Row = styled.div`
@@ -56,7 +56,7 @@ export const HeroImage = styled.div`
   }
   
   
-  ${media.tablet`
+  @media ${media.tablet} {
     font-size: 1.5em;
     h2 {
       position: absolute;
@@ -69,7 +69,7 @@ export const HeroImage = styled.div`
       left: 30%;
       top: 30%;
     }
-  `}
+  }
 `;
 
 

@@ -12,9 +12,9 @@ export const ImageButton = styled.div`
   border-radius: 20px;
   margin-right: 80px;
 
-  ${media.tablet`
+  @media ${media.tablet} {
     margin-left:15px;
-  `}
+  }
 
   & > img {
     transition: transform .3s;
@@ -37,9 +37,9 @@ export const ImageButton2 = styled.div`
   border-radius: 20px;
   
   
-  ${media.tablet`
+  @media ${media.tablet} {
     margin-right:15px;
-  `}
+  }
   
   & > img {
     transition: transform .3s;
@@ -55,28 +55,28 @@ export const ImageButton2 = styled.div`
 
 export const ImageContainer = styled(Relative) `
   width: 100%;
-  ${media.tablet`
+  @media ${media.tablet} {
     width: 100%;
-  `}
+  }
   flex-shrink: 0;
   flex-grow: 0;  
 `;
 export const ProjectContainer2 = styled(Flex) `
   width: 20%;
   display: inline;
-  ${media.tablet`
+  @media ${media.tablet} {
     flex-direction: column;
     display: block;
     margin: auto;
     width: 90%;
     text-align: center;
-  `}
+  }
 
   h1 {
     text-align: right;
-    ${media.tablet`
+    @media ${media.tablet} {
       text-align: center;
-    `}
+    }
   }
   p {
     font-size: 30px;
@@ -84,30 +84,30 @@ export const ProjectContainer2 = styled(Flex) `
     pointer-events: none;
     margin-top: 100px;
     line-height: 200%;
-    ${media.tablet`
+    @media ${media.tablet} {
       margin-top: 20px;
-    `}
+    }
   }
 `;
 export const ProjectContainer = styled(Flex) `
   width: 20%;
   display: inline;
-  ${media.tablet`
+  @media ${media.tablet} {
     flex-direction: column;
     display: block;
     margin: auto;
     width: 75%;
     text-align: center;
-  `}
+  }
   p {
     font-size: 30px;
     margin-left: 0px;
     pointer-events: none;
     margin-top: 100px;
     line-height: 200%;
-    ${media.tablet`
+    @media ${media.tablet} {
       margin-top: 30px;
-    `}    
+    }    
   }
 `;
 
