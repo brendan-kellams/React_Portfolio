@@ -8,7 +8,7 @@ class NavigationBar extends Component {
         <NavItem to="/" style={{marginLeft: 10}}>Home</NavItem>
         <NavItem to="/projects">Projects</NavItem>
         <NavItem to="/aboutme" >About Me</NavItem>
-        <NavItem to='/resume' style={{marginRight: 10}}>Resume</NavItem>        
+        <NavItem to='/resume'>Resume</NavItem>        
       </NavigationContainer>
     );
   }

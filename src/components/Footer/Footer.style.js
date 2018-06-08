@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import media from '../../theme/media';
-import {blue, white} from '../../theme/variables';
+import {blue, white, charcoal} from '../../theme/variables';
 
 export const FooterStyle = styled.div`
   background-color: ${blue};
-  border-top: 1px solid ${white};
+  border-top: 2px solid ${charcoal};
+  text-shadow: -1px 0 ${charcoal}, 0 1px ${charcoal}, 1px 0 ${charcoal}, 0 -1px ${charcoal};
   color: ${white};
   text-align: center;
   position: fixed;
@@ -26,14 +27,13 @@ export const FooterStyle = styled.div`
   @media ${media.mobileL} {
     font-size: 15px;
     height: 35px;
-    padding-left: 0;
   }
   @media ${media.tablet} {
-    font-size: 23px;
+    font-size: 20px;
     height: 55px;
   }
   @media ${media.laptop} {
-    font-size: 20px;
+    font-size: 23px;
     height: 60px;
   }
 `;
@@ -58,8 +58,7 @@ export const Image = styled.img`
     width: 40px;
   }
   @media ${media.laptop} {
-    height: 40px;
-    width: 40px;
-    padding: 5px;
+    height: 45px;
+    width: 45px;
   }
 `;

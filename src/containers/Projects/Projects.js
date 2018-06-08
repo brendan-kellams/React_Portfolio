@@ -4,11 +4,12 @@ import {
   ImageButton2,
   ImageContainer,
   ProjectContainer,
+  A
   // ProjectContainer2,
 } from './Projects.style';
 import { Container } from '../../theme/grid';
 import App from '../App/App';
-import { A, H1 } from '../../theme/types';
+import { H1 } from '../../theme/types';
 import Fade from 'react-reveal/Fade';
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 import Footer from '../../components/Footer/Footer';

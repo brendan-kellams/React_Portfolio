@@ -10,6 +10,9 @@ export const Title = styled.h1`
   @media ${media.mobileS} {
     font-size: 35px;
   }
+  @media ${media.tablet} {
+    font-size: 45px;
+  }
 `;
 
 export const Image = styled.img`
@@ -18,6 +21,10 @@ export const Image = styled.img`
   @media ${media.mobileS} {
     height: 250px;
     width: 250px;
+  }
+  @media ${media.tablet} {
+    height: 300px;
+    width: 300px;
   }
   @media ${media.laptop} {
     height: 350px;
@@ -28,3 +35,4 @@ export const Image = styled.img`
 export const ImageContainer = styled(Flex)`
   
 `;
+

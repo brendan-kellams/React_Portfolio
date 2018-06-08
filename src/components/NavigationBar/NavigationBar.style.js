@@ -5,18 +5,30 @@ import { Link } from  'react-router-dom';
 import media from '../../theme/media';
 
 export const NavigationContainer = styled(Flex)`
+  @media ${media.mobileS} {
+    right: 0;
+    left: 0;
+    position: fixed;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 1.5px solid ${charcoal};
+  }
+  @media ${media.tablet} {
+    border: 2px solid ${charcoal};    
+  }
+  @media ${media.laptopL} {
+    width: 32vw;
+    left: 33em;
+    border: 2px solid ${charcoal};    
+  }
   position: fixed;
   right: 8.5em;
   top: 0.8em;
   z-index: 1;
-  background-color: ${white};
+  background-color: ${blue};
   border-radius: 15px;
-  @media ${media.tablet} {
-    top: 0;
-    font-size: .8em;
-    position: fixed;
-    justify-content: center;
-  }
+
 `;
 
 export const NavItem = styled(Link)`
@@ -24,13 +36,22 @@ export const NavItem = styled(Link)`
   margin-left: 15px
   font-size: 1.5em;
   cursor: pointer;
-  color: ${blue};
+  color: ${white};
   position: relative;
   text-decoration: none;
-  @media ${media.tablet} {
-  font-size: 1em;
+  text-shadow: -1px 0 ${charcoal}, 0 1px ${charcoal}, 1px 0 ${charcoal}, 0 -1px ${charcoal};
+  @media ${media.mobileS} {
+    font-size: 1.3em;
   }
-  
+  @media ${media.mobileL} {
+    font-size: 1.8em;
+  }
+  @media ${media.tablet} {
+  font-size: 2em;
+  }
+  @media ${media.laptopL} {
+    font-size: 1em;
+  }
   
   &:hover {
     color: ${red};
@@ -41,40 +62,11 @@ export const NavItem = styled(Link)`
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: ${charcoal};
+      background-color: ${white};
       z-index: -1;
       transform: scale(1.3);
-      border-radius: 25px;
+      border-radius: 10px;
     }
   }
   `;
   
-  export const A = styled(Link)`
-    margin-right: 15px;
-    margin-left: 15px
-    font-size: 1.5em;
-    cursor: pointer;
-    color: ${blue};
-    position: relative;
-    text-decoration: none;
-    @media ${media.tablet} {
-    font-size: 1em;
-    }
-  
-    &:hover {
-      color: ${red};
-      &:after {
-        content: ' ';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: ${charcoal};
-        z-index: -1;
-        transform: scale(1.3);
-        border-radius: 25px;
-
-      }
-    }
-  `;

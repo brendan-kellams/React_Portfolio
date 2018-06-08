@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import media from '../../theme/media';
 import { Relative, Flex } from '../../theme/grid';
+import { red, charcoal } from '../../theme/variables';
 
 export const ImageButton = styled.div`
   cursor: pointer;
@@ -95,19 +96,39 @@ export const ProjectContainer = styled(Flex) `
   @media ${media.tablet} {
     flex-direction: column;
     display: block;
-    margin: auto;
-    width: 75%;
-    text-align: center;
+    width: 100%;
   }
   p {
+    @media ${media.tablet} {
+      margin-top: 10px;
+    }    
     font-size: 30px;
     margin-left: 0px;
     pointer-events: none;
     margin-top: 100px;
     line-height: 200%;
-    @media ${media.tablet} {
-      margin-top: 30px;
-    }    
+  }
+`;
+export const A = styled.a`
+  color: ${charcoal};
+  text-decoration: none;
+  position: relative
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: ${charcoal};
+    z-index:-1;
+    transition: height .1s, background-color .1s;
+  }
+
+  &:hover:after {
+    height: 40%;
+    background-color: ${red};
   }
 `;
 
