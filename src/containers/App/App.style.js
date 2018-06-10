@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { white } from '../../theme/variables';
+import { Flex } from '../../theme/grid';
+import media from '../../theme/media';
 
 export const Background = styled.div`
   position: fixed;
@@ -16,5 +18,15 @@ export const Background = styled.div`
 
   body {
     background-color: ${white};
+  }
+`;
+
+export const App = styled.div`
+  div.header {
+    @media ${media.laptopL} {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
   }
 `;

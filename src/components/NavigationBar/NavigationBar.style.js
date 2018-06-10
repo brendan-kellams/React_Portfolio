@@ -18,8 +18,13 @@ export const NavigationContainer = styled(Flex)`
     border: 2px solid ${charcoal};    
   }
   @media ${media.laptopL} {
+    width: 34vw;
+    left: 30em;
+    border: 2px solid ${charcoal};    
+  }
+  @media ${media.desktop} {
     width: 32vw;
-    left: 33em;
+    left: 3em;
     border: 2px solid ${charcoal};    
   }
   position: fixed;
