@@ -4,35 +4,37 @@ import {blue, red, charcoal, white} from '../../theme/variables';
 import { Link } from  'react-router-dom';
 import media from '../../theme/media';
 
+
 export const NavigationContainer = styled(Flex)`
   @media ${media.mobileS} {
     right: 0;
     left: 0;
+    top: 0.8em;
     position: fixed;
     justify-content: center;
+    background-color: ${blue};
+    border-radius: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
     border: 1.5px solid ${charcoal};
+    z-index: 1;
   }
   @media ${media.tablet} {
     border: 2px solid ${charcoal};    
   }
-  @media ${media.laptopL} {
-    width: 34vw;
-    left: 30em;
-    border: 2px solid ${charcoal};    
+  @media ${media.laptop} {
+    width: 38vw;
+    left: 24.5em;    
   }
   @media ${media.desktop} {
-    width: 32vw;
-    left: 3em;
-    border: 2px solid ${charcoal};    
+    width: 38vw;
+    left: 24.3em;  
   }
-  position: fixed;
-  right: 8.5em;
-  top: 0.8em;
-  z-index: 1;
-  background-color: ${blue};
-  border-radius: 15px;
+  @media ${media.desktopL} {
+    width: 38vw;
+    left: 24.3em;  
+  }
+
 
 `;
 
@@ -54,7 +56,7 @@ export const NavItem = styled(Link)`
   @media ${media.tablet} {
   font-size: 2em;
   }
-  @media ${media.laptopL} {
+  @media ${media.laptop} {
     font-size: 1em;
   }
   

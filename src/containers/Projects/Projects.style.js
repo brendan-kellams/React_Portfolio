@@ -9,18 +9,18 @@ export const ProjectContainer = styled(Flex) `
   flex-direction: column;
   width: 100%;
 }
-@media ${media.laptopL} {
-  // flex-direction: row;
-  // justify-content: flex-start;
+@media ${media.laptop} {
+
+  justify-content: flex-start;
 }
 div.row {
-  @media ${media.laptopL} {
+  @media ${media.laptop} {
     display: flex;
     flex-direction: row;
   }
 }
 div.row2 {
-  @media ${media.laptopL} {
+  @media ${media.laptop} {
     display: flex;
     direction: rtl;
     flex-direction: row;
@@ -35,7 +35,7 @@ p {
     pointer-events: none;
     line-height: 200%;
   }
-  @media ${media.laptopL} {
+  @media ${media.laptop} {
     padding: 10px;
     width: 70%;
   }    
@@ -45,22 +45,24 @@ h1 {
     margin-top: 30px;
     text-align: center;
   }
-  @media ${media.laptopL} {
+  @media ${media.laptop} {
+    margin-top: 20px;
   }
 }
 h1.project {
   @media ${media.mobileS} {
     text-align: center;
   }
-  @media ${media.laptopL}{
+  @media ${media.laptop}{
     text-align: left;
+    flex-direction: row;
   }
 }
 h1.project2 {
   @media ${media.mobileS} {
     text-align: center;
   }
-  @media ${media.laptopL}{
+  @media ${media.laptop}{
     text-align: right;
   }
 }
@@ -71,7 +73,7 @@ export const ImageContainer = styled(Flex) `
   @media ${media.mobileS} {
     justify-content: center;
   }
-  @media ${media.laptopL} {
+  @media ${media.laptop} {
     justify-content: flex-start;
   }
 `;
@@ -81,7 +83,7 @@ export const ImageContainer2 = styled(Flex)`
   @media ${media.mobileS} {
     justify-content: center;
   }
-  @media ${media.laptopL} {
+  @media ${media.laptop} {
     justify-content: flex-end;
   }
 `;

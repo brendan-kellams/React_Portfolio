@@ -10,9 +10,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className='header'>
-          <NavigationBar />
-        </div>
+        <NavigationBar />
         <Background />
         {this.props.children}
       </div>

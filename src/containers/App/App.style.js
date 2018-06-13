@@ -20,13 +20,3 @@ export const Background = styled.div`
     background-color: ${white};
   }
 `;
-
-export const App = styled.div`
-  div.header {
-    @media ${media.laptopL} {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-  }
-  }
-`;

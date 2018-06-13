@@ -32,7 +32,7 @@ export const FooterStyle = styled.div`
     font-size: 20px;
     height: 55px;
   }
-  @media ${media.laptop} {
+  @media ${media.tabletL} {
     font-size: 23px;
     height: 60px;
   }
@@ -57,7 +57,7 @@ export const Image = styled.img`
     height: 40px;
     width: 40px;
   }
-  @media ${media.laptop} {
+  @media ${media.tabletL} {
     height: 45px;
     width: 45px;
   }

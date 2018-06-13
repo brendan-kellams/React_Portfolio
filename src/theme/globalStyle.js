@@ -16,10 +16,10 @@ injectGlobal`
     @media ${media.tablet} {
       font-size: 20px;
     }
-    @media ${media.laptop} {
+    @media ${media.tabletL} {
       font-size: 25px;
     }
-    @media ${media.laptopL} {
+    @media ${media.laptop} {
       font-size: 30px;
     }
     @media ${media.desktop} {

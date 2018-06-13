@@ -26,7 +26,7 @@ export const Image = styled.img`
     height: 300px;
     width: 300px;
   }
-  @media ${media.laptop} {
+  @media ${media.tabletL} {
     height: 350px;
     width: 350px;
   }
