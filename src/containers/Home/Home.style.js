@@ -1,75 +1,105 @@
 import styled from 'styled-components';
 import { white } from '../../theme/variables'
 import media from '../../theme/media';
+import { Flex } from '../../theme/grid';
 
-export const Logo = styled.div`
-  width: 350px;
-  height: 350px;
-  algin-content: center;
-  text-align: center;
-  display: block;
-  float:left;
-  a {
-    color: black
-    text-decoration: none;
-  }
- @media ${media.tablet} {
-  margin-left: 70px;
-  }
-`;
+export const Logo = styled(Flex)`
+  @media ${media.mobileS} {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 
-export const Row = styled.div`
-  display: block;
-  margin: auto;
-  width: 70%;
+    img {
+      width: 50%;
+      height: auto;
+    }
+    
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+    a {
+      color: black
+      text-decoration: none;
+    }
+  }
+
+  @media ${media.tabletL} {
+    img {
+      width: 70%;
+      height: auto;
+    }
+    h3 {
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+
+  @media ${media.laptop} {
+    img {
+      width: 75%;
+      padding: 30px;
+    }
+  }
+  `;
+  
+  export const Rows = styled(Flex)`
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;  
+    
+    @media ${media.tablet} {
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      margin-bottom: 60px;
+    }
 `;
 
 export const HeroImage = styled.div`
-  height: 100vh;
-  width: 100%;
-  border-radius: 20px;
-  background-image: url('${require('../../assets/images/Brendan.gif')}');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  
-  text-align: center;
-  color: ${white};
-  text-shadow: 2px 2px black;
-  
-  font-size: 2em;
-  h2 {
-    position: absolute;
-    left: 38.5%;
-    top: 15%;
-  }
-
-  h3 {
-    position: absolute;
-    left: 42%;
-    top: 30%;
-  }
-  
-  
-  @media ${media.tablet} {
-    font-size: 1.5em;
+  @media ${media.mobileS} {
+    margin: 0;
+    margin-top:12px;
+    width: 100%;
+    height: 66.67vh;
+    border-radius: 20px;
+    background-image: url('${require('../../assets/images/Brendan.gif')}');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    text-align: center;
+    color: ${white};
+    text-shadow: 2px 2px black;
+    font-size: 2em;
+    
     h2 {
-      position: absolute;
-      left: 21%;
-      top: 20%;
-    }
-
-    h3 {
-      position: absolute;
-      left: 30%;
-      top: 30%;
+      margin-bottom: 0;
+      }
     }
   }
+
+  @media ${media.mobileL} {
+    margin-top: 20px;
+  }
+  @media ${media.tablet} {
+    margin-top: 30px;
+  }
+  @media ${media.laptop} {
+    margin-top: 0px;
+    height: 100vh
+  }
+
+  
 `;
 
 

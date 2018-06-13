@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import media from '../../theme/media';
 import {blue, white, charcoal} from '../../theme/variables';
+import { Flex } from '../../theme/grid';
 
 export const FooterStyle = styled.div`
   background-color: ${blue};
@@ -61,4 +62,10 @@ export const Image = styled.img`
     height: 45px;
     width: 45px;
   }
+`;
+
+export const Row = styled(Flex)`
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 `;

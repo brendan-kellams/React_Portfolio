@@ -17,12 +17,14 @@ export const Div = styled.div`
 `;
 
 export const Container = styled(Div) `
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 2.8em;
-  position: relative;
-  min-height: 100%;
+  @media ${media.mobileS} {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2.8em;
+    position: relative;
+    min-height: 100%;
 
+  }
   @media ${media.tablet} {
     padding-left: 15px;
     padding-right: 15px;

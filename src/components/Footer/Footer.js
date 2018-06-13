@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FooterStyle, Image } from './Footer.style';
-import { Row } from '../../containers/Home/Home.style';
+import { Row } from './Footer.style';
 
 
 class Footer extends Component {

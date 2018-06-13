@@ -6,7 +6,7 @@ import Flip from 'react-reveal/Flip'
 import { H2 } from '../../theme/types'
 
 import {
-  HeroImage, Logo, Row,
+  HeroImage, Logo, Rows,
 } from './Home.style';
 
 import WhenInView from '../../components/WhenInView/WhenInView'
@@ -23,7 +23,7 @@ export default class Home extends Component {
           <ScrollToTop />
           <Container>
             <HeroImage>
-              <h2>Brendan Kellams</h2>
+              <H2 align='center'>Brendan Kellams</H2>
               <h3>Wed Developer</h3>
             </HeroImage>
             <br />
@@ -49,7 +49,7 @@ export default class Home extends Component {
               }
             </WhenInView>
             <br />
-            <Row>
+            <Rows>
               <WhenInView>
                 {({ isInView }) =>
                   <Flip right>
@@ -98,9 +98,9 @@ export default class Home extends Component {
                   </Flip>
                 }
               </WhenInView>
-            </Row>
+            </Rows>
             <br />
-            <Row>
+            <Rows>
               <WhenInView>
                 {({ isInView }) =>
                   <Flip right>
@@ -149,7 +149,7 @@ export default class Home extends Component {
                   </Flip>
                 }
               </WhenInView>
-            </Row>
+            </Rows>
           </Container>
         </App>
         <div style={{ clear: 'both', height: 50 }}></div>
