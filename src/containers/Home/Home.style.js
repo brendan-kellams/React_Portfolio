@@ -19,11 +19,9 @@ export const Logo = styled(Flex)`
     }
     
     h2 {
-      font-size: 15px;
       text-align: center;
     }
     h3 {
-      font-size: 10px;
       text-align: center;
     }
     a {
