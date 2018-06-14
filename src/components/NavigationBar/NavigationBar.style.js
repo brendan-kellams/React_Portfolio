@@ -38,15 +38,15 @@ export const NavigationContainer = styled(Flex)`
 
 export const NavItem = styled(Link)`
   @media ${media.mobileS} {
-    margin-right: 15px;
-    margin-left: 15px
+    margin-right: 10px;
+    margin-left: 10px
     font-size: 1em;
     cursor: pointer;
     color: ${white};
     position: relative;
     text-decoration: none;
     text-shadow: -1px 0 ${charcoal}, 0 1px ${charcoal}, 1px 0 ${charcoal}, 0 -1px ${charcoal};
-    font-size: 1.3em;
+    font-size: 1em;
   }
   @media ${media.mobileL} {
     font-size: 1.8em;
