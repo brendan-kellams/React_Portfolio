@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Container } from '../../theme/grid';
 import App from '../App/App';
-import Fade from 'react-reveal/Fade'
-import Flip from 'react-reveal/Flip'
-import { H2 } from '../../theme/types'
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 import {
   HeroImage, Logo, Rows,
@@ -23,28 +22,28 @@ export default class Home extends Component {
           <ScrollToTop />
           <Container>
             <HeroImage>
-              <H2 align='center'>Brendan Kellams</H2>
+              <h2>Brendan Kellams</h2>
               <h3>Wed Developer</h3>
             </HeroImage>
             <br />
             <WhenInView>
               {({ isInView }) =>
                 <Fade left>
-                  <H2 align='center'>
+                  <p>
                     Hello Everyone!  Welcome to my portfolio!  This portfolio was built all in React.js
                     and I'm excited to share it with all of you!  I enjoy making things that will make people happy.
                     Whether it is music, food, computers, or websites, I love to do my part to put a smile on someone's
                     face.
-                </H2>
+                </p>
                 </Fade>
               }
             </WhenInView>
             <WhenInView>
               {({ isInView }) =>
                 <Fade right>
-                  <H2 align='center'>
+                  <p>
                     Here are some of the technologies that I use in my web development.
-                </H2>
+                </p>
                 </Fade>
               }
             </WhenInView>

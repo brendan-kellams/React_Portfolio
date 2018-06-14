@@ -18,8 +18,12 @@ export const Logo = styled(Flex)`
       height: auto;
     }
     
+    h2 {
+      font-size: 15px;
+      text-align: center;
+    }
     h3 {
-      font-size: 20px;
+      font-size: 10px;
       text-align: center;
     }
     a {
