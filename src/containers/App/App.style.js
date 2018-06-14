@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { white } from '../../theme/variables';
-import { Flex } from '../../theme/grid';
-import media from '../../theme/media';
 
 export const Background = styled.div`
   position: fixed;

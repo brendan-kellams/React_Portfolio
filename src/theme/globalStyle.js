@@ -7,11 +7,10 @@ injectGlobal`
 
   body {
     font-family: 'Fjalla One', sans-serif;
-    font-weight: bold;
     background-color: ${white};
 
     @media ${media.mobileS} {
-      font-size: 12px;
+      font-size: 10px;
     }
     @media ${media.tablet} {
       font-size: 20px;

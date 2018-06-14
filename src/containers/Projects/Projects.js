@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
+import Footer from '../../components/Footer/Footer';
 import {
   ImageButton,
-  ImageButton2,
+  // ImageButton2,
   ImageContainer,
   ImageContainer2,
   ProjectContainer,
@@ -9,11 +12,7 @@ import {
   // ProjectContainer2,
 } from './Projects.style';
 import { Container } from '../../theme/grid';
-import App from '../App/App';
-import { H1 } from '../../theme/types';
-import Fade from 'react-reveal/Fade';
-import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
-import Footer from '../../components/Footer/Footer';
+import App from '../App/App';;
 
 
 class Projects extends Component {

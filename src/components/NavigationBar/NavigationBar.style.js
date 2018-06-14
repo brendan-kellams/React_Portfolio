@@ -34,20 +34,18 @@ export const NavigationContainer = styled(Flex)`
     width: 38vw;
     left: 24.3em;  
   }
-
-
 `;
 
 export const NavItem = styled(Link)`
-  margin-right: 15px;
-  margin-left: 15px
-  font-size: 1.5em;
-  cursor: pointer;
-  color: ${white};
-  position: relative;
-  text-decoration: none;
-  text-shadow: -1px 0 ${charcoal}, 0 1px ${charcoal}, 1px 0 ${charcoal}, 0 -1px ${charcoal};
   @media ${media.mobileS} {
+    margin-right: 15px;
+    margin-left: 15px
+    font-size: 1em;
+    cursor: pointer;
+    color: ${white};
+    position: relative;
+    text-decoration: none;
+    text-shadow: -1px 0 ${charcoal}, 0 1px ${charcoal}, 1px 0 ${charcoal}, 0 -1px ${charcoal};
     font-size: 1.3em;
   }
   @media ${media.mobileL} {
