@@ -21,7 +21,11 @@ export const ProjectContainer = styled(Flex)`
       line-height: 200%;
     }
   }
-
+  @media ${media.tablet} {
+    h1 {
+      font-size: 45px;
+    }
+  }
   @media ${media.tabletL} {
     h1 {
       padding-top: 20px;
