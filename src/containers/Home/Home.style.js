@@ -86,7 +86,11 @@ export const HeroImage = styled.div`
     
     h2 {
       margin-bottom: 0;
-      }
+      font-size: 1.3em;
+    }
+    
+    h3 {
+      font-size: 1em;
     }
   }
 
