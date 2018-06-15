@@ -28,6 +28,10 @@ export const Container = styled(Div) `
   @media ${media.tablet} {
     padding-left: 15px;
     padding-right: 15px;
+
+    p {
+      font-size: 23px;
+    }
   }
 
   `;
