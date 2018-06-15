@@ -7,6 +7,10 @@ export const ProjectContainer = styled(Flex)`
   @media ${media.mobileS} {
     flex-direction: column;
     width: 100%;
+
+    h1.project, h1.project2 {
+      text-align: center;
+    }
   }
   
   @media ${media.laptop} {
@@ -54,9 +58,6 @@ export const ProjectContainer = styled(Flex)`
   }
   
   h1.project {
-    @media ${media.mobileS} {
-      text-align: center;
-    }
     @media ${media.laptop}{
       text-align: left;
       flex-direction: row;
@@ -64,9 +65,6 @@ export const ProjectContainer = styled(Flex)`
   }
   
   h1.project2 {
-    @media ${media.mobileS} {
-      text-align: center;
-    }
     @media ${media.laptop}{
       text-align: right;
     }
