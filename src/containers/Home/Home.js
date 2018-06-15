@@ -29,7 +29,7 @@ export default class Home extends Component {
             <WhenInView>
               {({ isInView }) =>
                 <Fade left>
-                  <p>
+                  <p style= {{textAlign: 'center'}}>
                     Hello Everyone!  Welcome to my portfolio!  This portfolio was built all in React.js
                     and I'm excited to share it with all of you!  I enjoy making things that will make people happy.
                     Whether it is music, food, computers, or websites, I love to do my part to put a smile on someone's
@@ -41,7 +41,7 @@ export default class Home extends Component {
             <WhenInView>
               {({ isInView }) =>
                 <Fade right>
-                  <p>
+                  <p style= {{textAlign: 'center'}}>
                     Here are some of the technologies that I use in my web development.
                 </p>
                 </Fade>

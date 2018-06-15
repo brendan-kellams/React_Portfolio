@@ -46,10 +46,10 @@ export const NavItem = styled(Link)`
     position: relative;
     text-decoration: none;
     text-shadow: -1px 0 ${charcoal}, 0 1px ${charcoal}, 1px 0 ${charcoal}, 0 -1px ${charcoal};
-    font-size: 1em;
+    font-size: 1.2em;
   }
   @media ${media.mobileL} {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   @media ${media.tablet} {
   font-size: 2em;
