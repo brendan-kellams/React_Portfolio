@@ -11,10 +11,19 @@ export const ProjectContainer = styled(Flex)`
     h1.project, h1.project2 {
       text-align: center;
     }
+
+    p {
+      margin-top: 10px;
+      text-align: center;
+      margin-left: 0px;
+      pointer-events: none;
+      line-height: 200%;
+    }
   }
   
   @media ${media.laptop} {
     justify-content: flex-start;
+
   }
   
   div.row {
@@ -34,13 +43,6 @@ export const ProjectContainer = styled(Flex)`
   }
   
   p {
-    @media ${media.mobileS} {
-      margin-top: 10px;
-      text-align: center;
-      margin-left: 0px;
-      pointer-events: none;
-      line-height: 200%;
-    }
     @media ${media.laptop} {
       padding: 10px;
       width: 70%;
