@@ -24,15 +24,13 @@ export const NavigationContainer = styled(Flex)`
   }
   @media ${media.laptop} {
     width: 38vw;
-    left: 24.5em;    
+    left: auto;  
   }
   @media ${media.desktop} {
-    width: 38vw;
-    left: 24.3em;  
+    width: 38vw;  
   }
   @media ${media.desktopL} {
-    width: 38vw;
-    left: 24.3em;  
+    width: 38vw; 
   }
 `;
 
@@ -55,7 +53,7 @@ export const NavItem = styled(Link)`
   font-size: 2em;
   }
   @media ${media.laptop} {
-    font-size: 1em;
+    font-size: 2em;
   }
   
   &:hover {
