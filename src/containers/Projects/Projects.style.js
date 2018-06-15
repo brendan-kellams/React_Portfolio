@@ -36,51 +36,40 @@ export const ProjectContainer = styled(Flex)`
   @media ${media.laptop} {
     justify-content: flex-start;
 
-  }
-  
-  div.row {
-    @media ${media.laptop} {
+    div.row {
       display: flex;
       flex-direction: row;
     }
-  }
-  
-  div.row2 {
-    @media ${media.laptop} {
+
+    div.row2 {
       display: flex;
       direction: rtl;
       flex-direction: row;
       justify-content: flex-end;
     }
-  }
-  
-  p {
-    @media ${media.laptop} {
+
+    p {
       padding: 10px;
       width: 70%;
-    }    
-  }
-  
-  h1 {
-    @media ${media.mobileS} {
-      margin-top: 30px;
-      text-align: center;
     }
-    @media ${media.laptop} {
-      margin-top: 20px;
-    }
-  }
-  
-  h1.project {
-    @media ${media.laptop}{
+
+    h1.project {
       text-align: left;
       flex-direction: row;
     }
+
+    h1.project2 {
+      text-align: right;
+    }
   }
   
-  h1.project2 {
-    @media ${media.laptop}{
-      text-align: right;
+  
+  }
+  
+  
+  h1 {
+    @media ${media.laptop} {
+      margin-top: 20px;
     }
   }
 
