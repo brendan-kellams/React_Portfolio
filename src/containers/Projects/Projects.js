@@ -43,7 +43,6 @@ class Projects extends Component {
                 </Fade>
               </div>
             </ProjectContainer>
-            <br /><br /><br />
             <ProjectContainer>
               <h1 className='project2'><A href='http://whoopitup.herokuapp.com/' target='_blank'>Whoop It Up!</A></h1>
               <div className='row2'>
@@ -63,7 +62,6 @@ class Projects extends Component {
                 </Fade>
               </div>
             </ProjectContainer>
-            <br /><br /><br />
             <ProjectContainer>
               <h1 className='project'><A href='https://yumburger.herokuapp.com/' target='_blank'>Yum Burger!</A></h1>
               <div className='row'>
@@ -84,7 +82,6 @@ class Projects extends Component {
                 </Fade>
               </div>
             </ProjectContainer>
-            <br /><br /><br />
             <ProjectContainer>
               <h1 className='project2'><A href='https://github.com/brendan-kellams/bamazon' target='_blank'>Bamazon</A></h1>
               <div className='row2'>

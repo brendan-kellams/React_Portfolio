@@ -10,6 +10,7 @@ export const ProjectContainer = styled(Flex)`
 
     h1.project, h1.project2 {
       text-align: center;
+      margin-top: 30px;
     }
 
     p {
@@ -18,6 +19,13 @@ export const ProjectContainer = styled(Flex)`
       margin-left: 0px;
       pointer-events: none;
       line-height: 200%;
+    }
+  }
+
+  @media ${media.tabletL} {
+    h1 {
+      padding-top: 20px;
+      font-size: 50px;
     }
   }
   
