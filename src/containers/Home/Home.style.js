@@ -103,6 +103,16 @@ export const HeroImage = styled.div`
   @media ${media.laptop} {
     margin-top: 0px;
     height: 100vh
+
+    h2 {
+      font-size: 2em;
+      text-shadow: 3px 3px black
+    }
+
+    h3 {
+      font-size: 1.5em;
+      text-shadow: 3px 3px black
+    }
   }
 
   
