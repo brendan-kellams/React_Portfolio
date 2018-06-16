@@ -37,10 +37,27 @@ export const ImageContainer = styled(Flex)`
 `;
 
 export const Bio = styled.div`
-  p {
-    line-height: 1.5em;
-    text-align: center;
-    font-size: 1.5em;
+  @media ${media.mobileS} {
+    p {
+      line-height: 1.3em;
+      text-align: center;
+      font-size: 1em;
+    }
+  }
+  @media ${media.mobileL} {
+    p {
+      font-size: 1.1em;
+    }
+  }
+  @media ${media.tablet} {
+    p {
+      font-size: 1.5em;
+    }
+  }
+  @media ${media.tabletL} {
+    p {
+      font-size: 1.8em;
+    }
   }
 `;
 
