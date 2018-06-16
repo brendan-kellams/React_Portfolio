@@ -114,8 +114,14 @@ export const HeroImage = styled.div`
       text-shadow: 3px 3px black
     }
   }
+`;
 
-  
+export const Info = styled.div`
+  @media ${media.laptop} {
+    p {
+      font-size: 2em;
+    }
+  }
 `;
 
 

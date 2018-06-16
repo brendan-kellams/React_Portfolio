@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 
 import {
-  HeroImage, Logo, Rows,
+  HeroImage, Logo, Rows, Info
 } from './Home.style';
 
 import WhenInView from '../../components/WhenInView/WhenInView'
@@ -26,27 +26,29 @@ export default class Home extends Component {
               <h3>Wed Developer</h3>
             </HeroImage>
             <br />
-            <WhenInView>
-              {({ isInView }) =>
-                <Fade left>
-                  <p style= {{textAlign: 'center'}}>
-                    Hello Everyone!  Welcome to my portfolio!  This portfolio was built all in React.js
-                    and I'm excited to share it with all of you!  I enjoy making things that will make people happy.
-                    Whether it is music, food, computers, or websites, I love to do my part to put a smile on someone's
-                    face.
+            <Info>
+              <WhenInView>
+                {({ isInView }) =>
+                  <Fade left>
+                    <p style={{ textAlign: 'center' }}>
+                      Hello Everyone!  Welcome to my portfolio!  This portfolio was built all in React.js
+                      and I'm excited to share it with all of you!  I enjoy making things that will make people happy.
+                      Whether it is music, food, computers, or websites, I love to do my part to put a smile on someone's
+                      face.
                 </p>
-                </Fade>
-              }
-            </WhenInView>
-            <WhenInView>
-              {({ isInView }) =>
-                <Fade right>
-                  <p style= {{textAlign: 'center'}}>
-                    Here are some of the technologies that I use in my web development.
+                  </Fade>
+                }
+              </WhenInView>
+              <WhenInView>
+                {({ isInView }) =>
+                  <Fade right>
+                    <p style={{ textAlign: 'center' }}>
+                      Here are some of the technologies that I use in my web development.
                 </p>
-                </Fade>
-              }
-            </WhenInView>
+                  </Fade>
+                }
+              </WhenInView>
+            </Info>
             <br />
             <Rows>
               <WhenInView>
