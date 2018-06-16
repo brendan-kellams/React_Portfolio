@@ -36,3 +36,11 @@ export const ImageContainer = styled(Flex)`
   
 `;
 
+export const Bio = styled.div`
+  p {
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+  }
+`;
+
